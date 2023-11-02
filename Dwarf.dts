@@ -46,15 +46,15 @@ while tick:
 //Reload
 on buttondown reload:
    lock mana
-   enable @reloading
-   enable @main false
+   // enable @reloading
+   // enable @main false
 
 on mana empty:
    lock mana
-   enable @reloading
-   enable @main false
+   // enable @reloading
+   // enable @main false
 
-@reloading{
+// @reloading{
    while tick:
       locked mana?
       recharge rate _manaRechargeRate
@@ -62,17 +62,17 @@ on mana empty:
    on mana full:
       locked mana?
       lock mana false
-      enable @reloading false
-      enable @main
-}
+      // enable @reloading false
+      // enable @main
+// }
 
 
 
-@shot{
+// @shot{
    on hit player _target:
       stun _target _stunDuration
       destroy this
 
    on hit spawn _shot:
       damage _shot _damage
-}
+// }
