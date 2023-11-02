@@ -34,14 +34,6 @@ on variable _shootDir, foreach "turret" _turret:
    _ironshot = spawn "ironshot" dir _shootDir _ironshotRange, shoot dir _shootDir
    //insert _ironshot @shot
 
-projectile "ironshot":
-   hp: 1
-   duration: 1
-   limit: hpdrain
-   damage: 1
-   speed: 3
-   prefab: [prefab ironshot]
-
 // while tick, foreach "ironshot" _ironshot:
 //    move _ironshot_cddur
 
@@ -50,20 +42,6 @@ while tick:
 
 // while tick, foreach "turret" _turret:
 //    _turret _lookDir = _lookDir
-
-object "wall":
-   hp: 100
-   damage: 10
-   prefab: [prefab wall]
-
-object "turret":
-   hp: 10
-   damage: 1
-   prefab: [prefab wall]
-
-
-
-
 
 //Reload
 on buttondown reload:

@@ -1,0 +1,17 @@
+object "ironshot":
+   hp: 1
+   duration: 1
+   limit: hpdrain
+   damage: 1
+   speed: 3
+   prefab: [prefab ironshot]
+
+object "wall":
+   hp: 100
+   damage: 10
+   prefab: [prefab wall]
+
+object "turret":
+   hp: 10
+   damage: 1
+   prefab: [prefab wall]
