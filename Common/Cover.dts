@@ -1,0 +1,17 @@
+//Object that stealths players and other objects while inside
+
+//Player enters
+on enter player _target:
+    status _target stealthed
+
+//Player exits
+on exit player _target:
+    status _target stealthed false
+
+//Spawn enters
+on enter spawn _target:
+    status _target stealthed
+
+//Spawn exits
+on exit spawn _target:
+    status _target stealthed false

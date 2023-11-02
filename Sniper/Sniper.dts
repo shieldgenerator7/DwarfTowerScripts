@@ -1,0 +1,28 @@
+//Make bush blend in with current map
+on spawn:
+    "bush" = map.prefab "cover"
+
+//Laser
+on buttondown action1:
+    cooldown _laser_cddur _laser_cdremaining?
+    spend _laserManaCost?
+    _laser = spawn "laser" pos _pos
+    facedir _laser mousedir
+    status immobile
+    timer _laserSteadyDuration _laserSteadyTimer
+
+on timer _laserSteadyTimer end:
+    status immobile false
+
+//Trap
+on buttondown action2:
+    cooldown _trap_cddur _trap_cdremaining?
+    spend _trapManaCost?
+    spawn "trap" pos range mousepos _trapRange
+
+//Bush
+on buttondown action3:
+    cooldown _bush_cddur _bush_cdremaining?
+    spend _bushManaCost?
+    status stealthed!?
+    spawn "bush" pos _pos

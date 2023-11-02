@@ -6,7 +6,7 @@ on hit spawn _shot:
     damage _shot _damage
 
 while tick:
-    move _moveDir _speed
+    move this dir _moveDir _speed
     damage rate this _hpDrainRate
 
 on hp empty:

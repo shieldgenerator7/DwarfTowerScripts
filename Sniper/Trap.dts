@@ -1,0 +1,7 @@
+on hit player _target:    
+    status _target rooted
+    timer _rootDuration _rootTimer
+
+on timer _rootTimer end:
+    status _target rooted false
+    destroy this

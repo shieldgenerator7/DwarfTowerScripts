@@ -1,0 +1,21 @@
+//Set timer for when to do damage
+on spawn:
+    status ethereal
+    timer _delay _timer
+
+//Timer finished, do damage
+on timer _timer end:
+    status ethereal false
+    timer _despawnDelay _despawnTimer
+
+//Despawn
+on timer _despawnTimer end:
+    destroy this
+
+//Stun players
+on hit player _target:
+    stun _target _stunDuration
+
+//Damage spawned objects and terrain objects
+on hit object _target:
+    damage _target _damage
