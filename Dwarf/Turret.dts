@@ -1,0 +1,8 @@
+on spawn:
+    _ironshotRange = owner.ironshotRange
+
+on controller spawn "ironshot":
+    spawn "ironshot" dir controller.lookDir _ironshotRange, shoot dir controller.lookDir
+
+while tick:
+   _lookDir = controller.lookDir

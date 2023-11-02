@@ -29,16 +29,3 @@ on buttonup action2:
    consume _turretCharge min _turretChargeMin?
    _turret = spawn "turret" pos range mousepos _turretRange
    rampstats _turret #turretStats _turretCharge zero _turretChargeMax
-
-on variable _shootDir, foreach "turret" _turret:
-   _ironshot = spawn "ironshot" dir _shootDir _ironshotRange, shoot dir _shootDir
-   //insert _ironshot @shot
-
-// while tick, foreach "ironshot" _ironshot:
-//    move _ironshot_cddur
-
-while tick:
-   _lookDir = mousedir
-
-// while tick, foreach "turret" _turret:
-//    _turret _lookDir = _lookDir
