@@ -1,0 +1,17 @@
+//Manual Reload
+on buttondown reload:
+   lock mana
+
+//Auto Reload
+on mana empty:
+   lock mana
+
+//Reloading
+while tick:
+    locked mana?
+    recharge rate _manaRechargeRate
+
+//Reload Finished
+on mana full:
+    locked mana?
+    lock mana false

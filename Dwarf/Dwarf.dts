@@ -42,26 +42,3 @@ while tick:
 
 // while tick, foreach "turret" _turret:
 //    _turret _lookDir = _lookDir
-
-//Reload
-on buttondown reload:
-   lock mana
-   // enable @reloading
-   // enable @main false
-
-on mana empty:
-   lock mana
-   // enable @reloading
-   // enable @main false
-
-// @reloading{
-   while tick:
-      locked mana?
-      recharge rate _manaRechargeRate
-
-   on mana full:
-      locked mana?
-      lock mana false
-      // enable @reloading false
-      // enable @main
-// }
