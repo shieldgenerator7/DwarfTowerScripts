@@ -1,0 +1,6 @@
+//Objects that are meant to block shots
+on hit shot _shot:
+    damage _shot _damage
+
+on hp empty:
+    destroy this
