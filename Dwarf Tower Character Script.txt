@@ -1,0 +1,46 @@
+Dwarf Tower Character Script
+
+term - recognized keyword in the language
+_term - variable name
+"term" - registered object name
+#term ($term) - registered stat block name
+@term - registered script name
+
+trigger:
+   action
+
+while
+while the trigger is true, do the following actions
+
+
+cooldown [duration var] [time remaining var]
+if time remaining var is 0, sets it to duration var and continues
+else return
+
+spend [mana cost]
+if mana locked, return (this happens commonly during reload)
+if there's more than 0 mana, reduce mana by mana cost (min 0), and continue
+if disallowPartial, requires at least mana cost mana, else returns
+
+spawn [object name]
+spawns the object with the given name from the registered spawnable objects list for this character
+
+shoot [params]
+shoots the given spawned object
+if params is dir, the next param is the direction to shoot in
+if params is pos, the next param is the position to shoot towards
+
+charge rate [reserve rate] [reserve store] max [reserve max]
+places reserve rate mana per second in the reserve store, and reserves that mana
+if max is defined, will limit the reserve in reserve store to reserve max
+
+consume [reserve store] min [reserve min]
+if min is defined, and reserve store is less than min, release reserve store and return
+consumes the mana in reserve store, and remvoes it from reserves
+
+pos [position]
+says to target a position: the given position
+
+range [position] [max range]
+returns the given position if it is within max range of the character
+else it returns the position truncated to max range
