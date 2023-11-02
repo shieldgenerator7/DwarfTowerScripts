@@ -1,0 +1,31 @@
+//Pick up
+on hit ally player _target:
+    control this _target
+    swing #state0 _swingState full
+
+while tick:
+    move this pos controller.pos
+    face this dir controller.lookdir
+
+//Swing
+while controller button action1:
+    swing #state1 _swingState rate _swingSpeed
+
+while controller button up action1:
+    swing #state0 _swingState rate _swingSpeed
+
+//Throw
+on controller button down action2:
+    nonnull controller?
+    shoot this pos range controller.mousepos _throwRange
+    control this null
+
+//Hit
+on hit enemy player _target:
+    stun _target _stunDuration
+    damage this _damageSelf
+
+on hit enemy shot _target:
+    damage _target _damage
+
+

@@ -4,6 +4,7 @@ on buttondown reload:
 
 //Auto Reload
 on mana empty:
+   zero reserve?
    lock mana
 
 //Reloading

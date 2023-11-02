@@ -1,0 +1,65 @@
+@astralMain {
+
+    //Astral Shot
+    on button down action1:
+        cooldown _shot_cddur _shot_cdremaining?
+        spend _shotManaCost?
+        spawn "astralshot" dir mousedir _shotRange
+
+    //Weapon Creation Menu
+    on button down action2:
+        enable astralMain false
+        enable astralWeapon
+
+    //Dash
+    on button down action3:
+        spend _dashManaCost?
+        move this pos range mousepos _dashRange
+
+}
+
+@astralWeapon{
+
+    //Sword Creation
+    while button action1:
+        zero _scytheCharge?
+        zero _daggerCharge?
+        charge _swordCharge _swordChargeMax
+
+    on button up action1:
+        consume _swordCharge?
+        _sword = spawn "sword" pos _pos
+        call @exitMenu
+
+    //Dagger Creation
+    while button action2:
+        zero _scytheCharge?
+        zero _swordCharge?
+        charge _daggerCharge _daggerChargeMax
+
+    on button up action2:
+        consume _daggerCharge?
+        _dagger1 = spawn "dagger1" pos _pos
+        _dagger2 = spawn "dagger2" pos _pos
+        call @exitMenu
+    
+    //Scythe Creation
+    while button action3:
+        zero _swordCharge?
+        zero _daggerCharge?
+        charge _scytheCharge _scytheChargeMax
+
+    on button up action3:
+        consume _scytheCharge?
+        _scythe1 = spawn "scythe1" pos _pos
+        _scythe2 = spawn "scythe2" pos _pos
+        call @exitMenu
+
+    function @exitMenu:
+        enable @astralMain
+        enable @astralWeapon false
+        _swordCharge = zero
+        _daggerCharge = zero
+        _scytheCharge = zero
+
+}
