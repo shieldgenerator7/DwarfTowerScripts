@@ -19,7 +19,7 @@ while button action3:
 on buttonup action3:
    consume _wallCharge min _wallChargeMin?
    _wall = spawn "wall" pos range mousepos _wallRange
-   rampstats _wall $wallStats _wallCharge zero _wallChargeMax
+   rampstats _wall #wallStats _wallCharge zero _wallChargeMax
 
 //Turret
 while button action2:
@@ -28,7 +28,7 @@ while button action2:
 on buttonup action2:
    consume _turretCharge min _turretChargeMin?
    _turret = spawn "turret" pos range mousepos _turretRange
-   rampstats _turret $turretStats _turretCharge zero _turretChargeMax
+   rampstats _turret #turretStats _turretCharge zero _turretChargeMax
 
 on variable _shootDir, foreach "turret" _turret:
    _ironshot = spawn "ironshot" dir _shootDir _ironshotRange, shoot dir _shootDir
@@ -42,14 +42,14 @@ projectile "ironshot":
    speed: 3
    prefab: [prefab ironshot]
 
-# while tick, foreach "ironshot" _ironshot:
-#    move _ironshot_cddur
+// while tick, foreach "ironshot" _ironshot:
+//    move _ironshot_cddur
 
 while tick:
    _lookDir = mousedir
 
-# while tick, foreach "turret" _turret:
-#    _turret _lookDir = _lookDir
+// while tick, foreach "turret" _turret:
+//    _turret _lookDir = _lookDir
 
 object "wall":
    hp: 100

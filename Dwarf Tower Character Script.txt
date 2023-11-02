@@ -3,7 +3,7 @@ Dwarf Tower Character Script
 term - recognized keyword in the language
 _term - variable name
 "term" - registered object name
-#term ($term) - registered stat block name
+#term - registered stat block name
 @term - registered script name
 
 trigger:
