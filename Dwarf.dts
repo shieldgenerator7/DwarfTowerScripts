@@ -65,14 +65,3 @@ on mana empty:
       // enable @reloading false
       // enable @main
 // }
-
-
-
-// @shot{
-   on hit player _target:
-      stun _target _stunDuration
-      destroy this
-
-   on hit spawn _shot:
-      damage _shot _damage
-// }

@@ -1,0 +1,13 @@
+on hit player _target:
+    stun _target _stunDuration
+    destroy this
+
+on hit spawn _shot:
+    damage _shot _damage
+
+while tick:
+    move _moveDir _speed
+    damage rate this _hpDrainRate
+
+on hp empty:
+    destroy this
