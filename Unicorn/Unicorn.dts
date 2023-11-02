@@ -1,0 +1,25 @@
+//Charged Shot
+on button down action1:
+    spend _chargedShotManaCostInitial?
+    _chargedShot = spawn "chargedshot" dir movedir _chargedShotRange
+
+while button action1:
+    spend rate _chargedShotManaCost?
+    _chargedShot.hp += rate _chargedShotHPIncrease
+    _chargedShot.damage += rate _chargedShotDamageIncrease
+    _chargedShot.moveSpeed = _moveSpeed
+    move _chargedShot pos dir movedir _chargedShotRange
+    facedir _chargedShot movedir
+
+//Teleport
+on buttondown action2:
+    cooldown _teleport_cddur _teleport_cdremaining?
+    spend _teleportManaCost?
+    _teleport = spawn "teleport" dir mousedir _teleportRange
+    _teleport.moveSpeed = _moveSpeed
+
+//Rainbow
+while button action3:
+    positive _moveSpeed?
+    spend rate _rainbowManaCost?
+    _rainbow = spawn path "rainbow" pos _pos

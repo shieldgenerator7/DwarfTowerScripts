@@ -1,0 +1,7 @@
+//Teleport
+on hit entity _target:
+    move _target pos controller.mousepos
+    destroy this
+
+while tick:
+    move this dir _moveDir _moveSpeed

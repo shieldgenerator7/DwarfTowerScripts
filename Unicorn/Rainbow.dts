@@ -1,0 +1,7 @@
+//Speed up on
+on overlap player _ally:
+    stat layer _ally #rainbow
+
+//Speed up off
+on overlap false player _ally:
+    stat layer _ally #rainbow false
