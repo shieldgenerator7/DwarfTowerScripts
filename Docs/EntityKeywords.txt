@@ -1,0 +1,60 @@
+noun
+entity
+player
+object
+shot
+construct
+area
+
+
+=== noun ===
+All other types extend this type
+base vars:
+_team           Which team it is on, neutral nouns have no team
+
+=== entity ===
+Extends noun
+All solid objects are this type
+base vars:
+_hp             how many health points it has. when it reaches 0, something bad happens
+_pos            where it is
+_lookdir        which direction it is looking, independent of sprite orientation
+_movedir        which direction it is moving, if it is moving, unit vector
+_movespeed      how fast it is moving, if it is moving
+_baseMoveSpeed  how fast it can move by itself
+_targetpos      the position it wants to go to
+
+=== player ===
+Extends entity
+Player character.
+
+=== object ===
+Extends entity
+Objects that the player or map spawns. Includes shot and construct.
+base vars:
+_owner          The player that spawned it, none if spawned by map
+_controller     The player that controls it, none if spawned by map. If the controller changes, the object will be put on that team
+
+=== shot ===
+Extends object
+Projectiles that the player spawns with the intent to damage or harm the enemy.
+base vars:
+_damage         How much damage it deals to other objects
+_damagePlayer   How much damage it deals to players (usually 1)
+_hpDrain        How much hp it drains from itself each second (commonly used to limit range)
+_stunDuration   If this stuns a player, how long to stun the player for
+_knockBackSpeed If this stuns a player, how fast it will knock back the player
+
+=== construct ===
+Extends object
+An object a player constructs for utility, such as a wall.
+base vars:
+_quality        How good this construct is compared to others of its kind, from 0-100 (for constructs that require charging up to build)
+
+=== area ===
+Extends noun (not entity)
+An area of effect that listens for things coming in or out, but doesn't really interact otherwise.
+base vars:
+_duration       How long the area lasts for
+
+

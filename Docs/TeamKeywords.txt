@@ -1,0 +1,21 @@
+
+
+
+=== ally ===
+A noun that is on the same team as this noun
+A noun that is not on any team is not an ally
+
+=== enemy ===
+A noun that is on a team that is not the same team as this noun
+A noun that is not on any team is not an enemy
+
+=== nonally ===
+A noun that is not on the same team as this noun
+A noun that is not on any team is a nonally
+
+=== own ===
+An object that is owned by this player,
+An object that is owned by the same player as this object,
+A player that is this player,
+A player that owns this object
+An object that is not owned by any player is not included in this
