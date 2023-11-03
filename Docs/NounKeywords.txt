@@ -17,6 +17,7 @@ Extends noun
 All solid objects are this type
 base vars:
 _hp             how many health points it has. when it reaches 0, something bad happens
+_hpMax          how many health points it can have
 _pos            where it is
 _lookdir        which direction it is looking, independent of sprite orientation
 _movedir        which direction it is moving, if it is moving, unit vector
@@ -27,6 +28,9 @@ _targetpos      the position it wants to go to
 === player ===
 Extends entity
 Player character.
+base vars:
+_mana           how much mana it currently has
+_manaMax        how much mana it can have
 
 === object ===
 Extends entity

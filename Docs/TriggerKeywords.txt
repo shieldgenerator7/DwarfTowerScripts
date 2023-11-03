@@ -1,0 +1,56 @@
+
+
+
+=== on ===
+Triggers the condition the first time the condition is met after it not being met
+
+=== while ===
+Triggers the condition every frame while the condition is met
+
+=== on spawn ===
+Triggered when the noun spawns in or is created (Unity: Start())
+
+=== while tick ===
+Triggered each frame always (Unity: FixedUpdate())
+
+=== on destroy ===
+Triggered when this object is destroyed (Unity: OnDestroy())
+
+=== on button down [action] ===
+Triggered when the given action button is pressed
+
+=== while button [action] ===
+Triggered while the given action button is being held
+Triggered on the first frame it is held, but not on the frame when it is released
+
+=== on button up [action] ===
+Triggered when the given acion button is released
+
+=== mana empty ===
+True: the player's mana equals 0
+
+=== mana full ===
+True: the player's mana equals the player's manaMax
+
+=== hp empty ===
+True: the entity's hp equals 0
+
+=== hp full ===
+True: the entity's hp equals the entity's hpMax
+
+=== hit [team] [noun] [variable] ===
+True: the entity has hit another entity of the given team and the given noun type.
+When this gets processed, the given variable will contain the hit entity
+
+=== timer [variable] start ===
+True: the given variable is greater than 0
+`on timer _timer start:`
+
+=== timer [variable] ===
+True: the given variable is greater than 0
+`while timer _timer:`
+
+=== timer [variable] end ===
+True: the given variable equals 0
+`on timer _timer end:`
+
