@@ -1,0 +1,41 @@
+//Steal
+on button down action1:
+    _stealArea = spawn "stealarea" dir mousedir _stealRange
+
+while tick:
+    nonnull _stolenItem?
+    move _stolenItem pos dir mousedir _holdRange
+    heal _stolenItem rate _stolenItem.hpDrainRate
+
+on button up action2:
+    construct _stolenItem?
+    shoot _stolenItem pos range mousepos _throwRange
+    _stolenItem = null
+
+on button up action2:
+    shot _stolenItem?
+    shoot _stolenItem dir mousedir _shootRange
+    _stolenItem = null
+
+//Smoke cloud
+on button down action2:
+    cooldown _smoke_cddur _smoke_cdremaining?
+    spend _smokeManaCost?
+    _smokecan = spawn "smokecan" dir mousedir _smokeSpawnRange
+    shoot _smokecan pos range mousepos _smokeRange
+
+//Grapple
+on button down action3:
+    cooldown _grapple_cddur _grapple_cdremaining?
+    spend _grappleManaCost?
+    spawn "grapple" dir mousedir _grappleRange
+
+while tick:
+    nonzero _grapplePos?
+    move this dir to _grapplePos _grappleSpeed
+
+on hit pos _grapplePos:
+    status immobile false
+
+on status stun:
+    _grapplePos = zero

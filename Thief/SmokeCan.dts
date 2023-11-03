@@ -1,0 +1,3 @@
+on hit pos _targetPos:
+    spawn "smokecloud" pos _pos
+    stop this

@@ -1,0 +1,12 @@
+//Steal
+on hit spawn _target:
+    owner.stolenItem = _target
+    control _target owner
+    destroy this
+
+//Max duration
+on spawn:
+    timer _duration _timer
+
+on timer _timer end:
+    destroy this

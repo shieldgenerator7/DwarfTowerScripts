@@ -1,8 +1,8 @@
-on hit player _target:
+on hit enemy player _target:
     stun _target _stunDuration
     destroy this
 
-on hit spawn _shot:
+on hit enemy object _shot:
     damage _shot _damage
 
 while tick:

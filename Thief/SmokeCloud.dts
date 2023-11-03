@@ -1,0 +1,13 @@
+//Stealth
+on overlap ally _ally:
+    status _ally stealthed
+
+on overlap exit ally _ally:
+    status _ally stealthed false
+
+//Max duration
+on spawn:
+    timer _duration _timer
+
+on timer _timer end:
+    destroy this
