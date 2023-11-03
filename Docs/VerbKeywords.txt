@@ -1,0 +1,24 @@
+
+
+spend [mana cost]
+if mana locked, return (this happens commonly during reload)
+if there's more than 0 mana, reduce mana by mana cost (min 0), and continue
+if disallowPartial, requires at least mana cost mana, else returns
+Returns the mana spent, 0 if no mana spent
+
+spawn [prefab name] [position]
+spawns the object with the given prefab name from the registered spawnable objects list for this character
+spawns it at the given position
+
+shoot [object] [params]
+shoots the given spawned object
+if params is dir, the next param is the direction to shoot in
+if params is pos, the next param is the position to shoot towards
+
+charge rate [reserve rate] [reserve store] max [reserve max]
+places reserve rate mana per second in the reserve store, and reserves that mana
+if max is defined, will limit the reserve in reserve store to reserve max
+
+consume [reserve store] min [reserve min]
+if min is defined, and reserve store is less than min, release reserve store and return
+consumes the mana in reserve store, and removes it from reserves
