@@ -13,6 +13,9 @@ A noun that is not on any team is not an enemy
 A noun that is not on the same team as this noun
 A noun that is not on any team is a nonally
 
+=== neutral ===
+A noun that is not on any team
+
 === own ===
 An object that is owned by this player,
 An object that is owned by the same player as this object,

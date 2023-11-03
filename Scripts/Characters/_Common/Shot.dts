@@ -2,12 +2,14 @@ on hit enemy player _target:
     stun _target _stunDuration
     destroy this
 
-on hit enemy object _shot:
-    damage _shot _damage
+on hit enemy construct _construct:
+    damage _construct _damage
+    destroy this
+
+on hit neutral object _construct:
+    damage _construct _damage
+    destroy this
 
 while tick:
     move this dir _moveDir _speed
     damage rate this _hpDrainRate
-
-on hp empty:
-    destroy this
