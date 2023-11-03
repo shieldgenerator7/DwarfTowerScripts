@@ -1,7 +1,11 @@
-on hit player _target:    
+//Root player
+on hit enemy player _target:    
     status _target rooted
     timer _rootDuration _rootTimer
 
+//Unroot player
 on timer _rootTimer end:
-    status _target rooted false
     destroy this
+
+on destroy:
+    status _target rooted false

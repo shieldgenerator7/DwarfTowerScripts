@@ -1,8 +1,8 @@
 //Stealth
-on overlap ally _ally:
+on overlap start ally _ally:
     status _ally stealthed
 
-on overlap exit ally _ally:
+on overlap end ally _ally:
     status _ally stealthed false
 
 //Max duration

@@ -1,5 +1,5 @@
 //Steal
-on hit spawn _target:
+on overlap start enemy object _target:
     owner.stolenItem = _target
     control _target owner
     destroy this

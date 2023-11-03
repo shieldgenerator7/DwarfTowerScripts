@@ -1,6 +1,11 @@
 //Steal
 on button down action1:
     _stealArea = spawn "stealarea" dir mousedir _stealRange
+    status immobile
+
+on button up action1:
+    destroy _stealArea
+    status immobile false
 
 while tick:
     nonnull _stolenItem?

@@ -28,4 +28,8 @@ on hit enemy player _target:
 on hit enemy shot _target:
     damage _target _damage
 
+on hit nonally construct _target:
+    damage _target _damage
+    damage this _damageSelf
+
 

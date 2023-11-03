@@ -5,9 +5,9 @@ on timer _timer end:
     destroy this
 
 //Speed up on
-on overlap player _ally:
+on overlap start player _ally:
     stat layer _ally #rainbow
 
 //Speed up off
-on overlap false player _ally:
+on overlap end player _ally:
     stat layer _ally #rainbow false
