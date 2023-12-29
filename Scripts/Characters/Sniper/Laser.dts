@@ -3,6 +3,11 @@ on spawn:
     status ethereal
     timer _delay _timer
 
+//if sniper moves during laser, move with him
+while tick:
+    status ethereal?
+    move this pos controller.pos
+
 //Timer finished, do damage
 on timer _timer end:
     status ethereal false
