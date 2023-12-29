@@ -1,7 +1,13 @@
 on spawn:
     _ironshotRange = owner.ironshotRange
+    _ironshot_cddur = owner.ironshot_cddur
 
-on controller spawn "ironshot":
+while controller button action1:
+    //fire rate
+    cooldown _ironshot_cddur _ironshot_cdremaining?
+    //controller has amina?
+    controller locked mana!?
+    //spawn
     spawn "ironshot" dir controller.lookDir _ironshotRange, shoot dir controller.lookDir
 
 while tick:
