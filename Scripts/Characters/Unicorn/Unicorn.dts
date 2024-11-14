@@ -13,7 +13,7 @@ while button action1:
 
 //Teleport
 on buttondown action2:
-    cooldown _teleport_cddur _teleport_cdremaining?
+    cooldown _teleport_cddur _teleport_cd_next?
     spend _teleportManaCost?
     _teleport = spawn "teleport" dir mousedir _teleportRange
     _teleport.moveSpeed = _moveSpeed

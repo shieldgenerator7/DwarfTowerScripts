@@ -4,7 +4,7 @@ on spawn:
 
 while controller button action1:
     //fire rate
-    cooldown _ironshot_cddur _ironshot_cdremaining?
+    cooldown _ironshot_cddur _ironshot_cd_next?
     //controller has amina?
     controller locked mana!?
     //spawn

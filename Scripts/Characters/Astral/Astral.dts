@@ -2,7 +2,7 @@
 
     //Astral Shot
     on button down action1:
-        cooldown _shot_cddur _shot_cdremaining?
+        cooldown _shot_cddur _shot_cd_next?
         spend _shotManaCost?
         spawn "astralshot" dir mousedir _shotRange
 

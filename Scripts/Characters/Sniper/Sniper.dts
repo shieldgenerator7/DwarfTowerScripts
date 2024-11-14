@@ -4,7 +4,7 @@ on spawn:
 
 //Laser
 on buttondown action1:
-    cooldown _laser_cddur _laser_cdremaining?
+    cooldown _laser_cddur _laser_cd_next?
     spend _laserManaCost?
     _laser = spawn "laser" pos _pos
     facedir _laser mousedir
@@ -16,13 +16,13 @@ on timer _laserSteadyTimer end:
 
 //Trap
 on buttondown action2:
-    cooldown _trap_cddur _trap_cdremaining?
+    cooldown _trap_cddur _trap_cd_next?
     spend _trapManaCost?
     spawn "trap" pos range mousepos _trapRange
 
 //Bush
 on buttondown action3:
-    cooldown _bush_cddur _bush_cdremaining?
+    cooldown _bush_cddur _bush_cd_next?
     spend _bushManaCost?
     status stealthed!?
     spawn "bush" pos _pos

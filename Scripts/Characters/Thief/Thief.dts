@@ -24,14 +24,14 @@ on button up action2:
 
 //Smoke cloud
 on button down action2:
-    cooldown _smoke_cddur _smoke_cdremaining?
+    cooldown _smoke_cddur _smoke_cd_next?
     spend _smokeManaCost?
     _smokecan = spawn "smokecan" dir mousedir _smokeSpawnRange
     shoot _smokecan pos range mousepos _smokeRange
 
 //Grapple
 on button down action3:
-    cooldown _grapple_cddur _grapple_cdremaining?
+    cooldown _grapple_cddur _grapple_cd_next?
     spend _grappleManaCost?
     spawn "grapple" dir mousedir _grappleRange
 
