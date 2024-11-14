@@ -190,15 +190,19 @@ SPACE – Teleport to cursor. Has limited range, but range increased based on ch
 
 Based on the ghosts from PacMan.
 
-Instead of requiring amina, Ghost drops amina pellets when he uses abilities. Both allies and enemies can pick up amina pellets to gain a bit of amina. When Ghost stuns an enemy, he drops a super pellet. Super pellets grant more amina than regular pellets, but also make Ghost vulnerable for a few seconds, by removing his Ghost passive for a bit. Super pellets also prevent Ghost from using abilities. Amina pellets always spawn at Ghost’s current location. Super pellets spawn at the location of the ghost that hit the enemy player.
+PASSIVE – Pellets. Instead of requiring amina, Ghost and his ghostlings drops amina pellets while using an ability. Both allies and enemies can pick up amina pellets to gain a bit of amina. Every 10th pellet he drops will be a super pellet instead. Super pellets grant more amina than regular pellets, but also make Ghost and his ghostlings enter blue mode for a few seconds.
 
 PASSIVE – Ghost. Can pass through all objects, players, and shots, without getting hit. If he passes through an enemy, he hits that enemy, and causes them to lose all their amina.
 
-LMB – Unrest. Spawns a ghost at his position that chases the player closest to the cursor. If there is no player in range of the cursor, it wonders around its spawn position. If it hits a player, it drops a super pellet. Super pellets also work on the spawned ghosts. Spawned ghosts run away from the closest player while effected by super pellet.
+LMB – Unrest. Spawns a super pellet at the cursor location. After a delay, spawns a ghostling at the cursor position that chases the player closest to the cursor. If there is no player in range of the cursor, it wonders around its spawn position. Ghostlings run away from the closest player while in blue mode.
 
-RMB – Lock Camera. Magically locks the camera in place for him and anyone inside the area. If they attempt to leave the locked camera area, they teleport to the other side. This works like the maze in PacMan where you can teleport between the left and right sides. Drops pellets whenever a player tries to walk off the edge. Press to activate, press again to deactivate. If Ghost gets stunned, Lock Camera auto-deactivates.
+RMB – Ghost cage. Creates a giant white rectangle centered around the cursor. Anyone attempting to leave the rectangle gets teleported to the other side. This works like the maze in PacMan where you can teleport between the left and right sides. Press to activate, press again to deactivate. When activated, it spawns a super pellet at the center of the rectangle. If Ghost gets stunned, Ghost cage auto-deactivates.
 
-SPACE – Speed. Moves faster. Drops pellets at a constant rate.
+SPACE – Creep. Hold to make Ghost and his ghostlings Stealthed.
+
+## Blue Mode
+
+While in blue mode, Ghost and his ghostlings turn blue, move slower, can’t use abilities, can’t stun, and drop pellets. They also lose their ghost passive. If an enemy hits a ghostling, that ghostling disappears. If an enemy hits Ghost, he gets stunned.
 
 # Pirate
 
