@@ -1,10 +1,6 @@
-Dwarf Tower Characters
-
-I know I have another document out there, but here’s some ideas I have right now. Today is 2021-11-23.
+# Dwarf Tower Characters
 
 # Sniper
-
-He’s in another list somewhere. Mentioning him again because it’s highly likely that he will be the 4th character implemented.
 
 LMB – Levelwide laser that phases in after a short delay. Locks him in place
 
@@ -100,8 +96,6 @@ Furry’s abilities don’t do a lot of damage, so he’s not good against obsta
 
 # Wizard
 
-I know I wrote about this guy somewhere before. But here’s some new ideas I have for him.
-
 LMB – Fireball. Launch a fireball projectile with large size and high damage, but that shrinks and loses damage the further out it goes towards its max range. If it hits something, it does its damage on impact, then sets the target on fire for 1 second. It has 10 hp, and loses hp over time. The more hp it has, the bigger its size and the more damage it does.
 
 RMB – Lightning ball. Press to make a ball of lightning at the target location, instantly. It does 0 damage. It has 1 hp and loses hp overtime. When it dies, it pulls in everything in its range towards its location: allies, enemies, ally shots, enemy shots, obstacles, etc.
@@ -134,7 +128,7 @@ SPACE – Fear cloud. Large projectile that moves slowly over the map. Enemies i
 
 # Mimic
 
-In order for this to work, there needs to be treasure chests around the map. Otherwise everyone’s going to know the chest is always a mimic and never fall for it. I’ve written about this one before. I forget what abilities I gave it last time.
+In order for this to work, there needs to be treasure chests around the map. Otherwise everyone’s going to know the chest is always a mimic and never fall for it.
 
 LMB – Attack. Hits in the looking direction
 
@@ -146,7 +140,7 @@ Ok on second thought, maybe the mimic would work regardless if there’s chests 
 
 # Sigil Carver
 
-I wrote about her in an earlier document. She’s the one who wrote the permanent sigils on the caravan. But in game, she only has time for temporary sigils in the dirt.
+She’s the one who wrote the permanent sigils on the caravan. But in game, she only has time for temporary sigils in the dirt.
 
 LMB – Standard Shot
 
@@ -182,7 +176,7 @@ Sigils last indefinitely. Sigils take no damage. However, if a player walks over
 
 # Zayan
 
-Based on Goku from Dragon Ball Z. I definitely wrote about this character before, but perhaps by a different name.
+Based on Goku from Dragon Ball Z.
 
 R – Charge amina. Can overcharge basically indefinitely to get multiple layers of amina charges. Each layer has 100 amina. Has 1 hp per amina layer, minimum of 1 hp. If gets hit while charging, loses all amina in addition to getting stunned.
 
@@ -194,7 +188,7 @@ SPACE – Teleport to cursor. Has limited range, but range increased based on ch
 
 # Ghost
 
-I feel like I’ve written about this character many times. Based on the ghosts from PacMan.
+Based on the ghosts from PacMan.
 
 Instead of requiring amina, Ghost drops amina pellets when he uses abilities. Both allies and enemies can pick up amina pellets to gain a bit of amina. When Ghost stuns an enemy, he drops a super pellet. Super pellets grant more amina than regular pellets, but also make Ghost vulnerable for a few seconds, by removing his Ghost passive for a bit. Super pellets also prevent Ghost from using abilities. Amina pellets always spawn at Ghost’s current location. Super pellets spawn at the location of the ghost that hit the enemy player.
 
@@ -254,7 +248,7 @@ SPACE – Guardian Angel. Teleports to the ally at the cursor position and follo
 
 # Emperor Tree
 
-I think I’ve written about this one before. A unique tree that slowly takes over the board. It’s basically like playing a 4X or RTS game.
+A unique tree that slowly takes over the board. It’s basically like playing a 4X or RTS game.
 
 WASD – Move camera. The first tree spawns at your team’s flag. This is where your empire starts.
 
@@ -272,7 +266,7 @@ I imagine that each tree you control would count towards the player total needed
 
 # Thunderbird
 
-Bird of the weather. I’ve written about him before.
+Bird of the weather.
 
 LMB – Rain droplets. Fires a spray of three rain droplets. If they collide with each other, they combine into a bigger shot with more hp and more damage. They get an increase of +1 damage and +1 hp every time they combine, in addition to combining their stats. Rain droplets also power up other ally shots.
 
@@ -282,7 +276,7 @@ SPACE – Maelstrom. Makes a circle around him that sucks in shots into its orbi
 
 # Zombie
 
-Possibly written about this before, not sure. Has 5 hp and moves slowly.
+Has 5 hp and moves slowly.
 
 PASSIVE – Horde. When Zombie gets stunned or Zombie stuns a player, a zombie spawns at the location where that player was hit. Zombie controls all other zombies. When a regular zombie dies, a regular zombie spawns at a random location on the map.
 
@@ -306,7 +300,7 @@ Sacrificing a Level 3 Zombie increases Zombie’s Level by 1 until he gets stunn
 
 # Bard
 
-I’ve definitely written about him before. Each ability button is a note he can play that affects him and his allies. The longer he holds the note or spams it, the less effective it becomes. Playing other notes makes the effect recover. Thus, it’s optimal to play a song with multiple notes instead of one note over and over again. He doesn’t consume amina at all, nor does he actually shoot or do any damage
+Each ability button is a note he can play that affects him and his allies. The longer he holds the note or spams it, the less effective it becomes. Playing other notes makes the effect recover. Thus, it’s optimal to play a song with multiple notes instead of one note over and over again. He doesn’t consume amina at all, nor does he actually shoot or do any damage
 
 LMB – Damage boost. Allies increase fire rate, and ally shots do more damage.
 
@@ -320,7 +314,7 @@ There may also be specific multi-note songs that have a particular effect.
 
 # Thief
 
-Written about this guy before for sure. Gets in, grabs loot, gets out.
+Gets in, grabs loot, gets out.
 
 LMB – Grabby hands. Reaches out in the cursor direction, and claims whatever ally or enemy object it comes into contact with. The object is held above his head until he lets go of it. Control is passed to him. The object is still active while he’s holding it, in that it can damage and can take damage. Can only carry one thing at a time. Cannot launch other abilities while holding an object, but can activate smoke cannister and grappling hook while holding something.
 
@@ -329,8 +323,6 @@ RMB – Smoke cloud. Throws smoke cannister shot in the cursor direction. at cur
 SPACE – Grappling hook. Press to send it in the cursor direction. When it hits something, it stops. While it’s out, hold to pull Thief out to the hook’s location. Does not drag him through solid objects. Stop holding to stop pulling Thief. Hook lasts until destroyed. Thief can destroy his grappling hook by hitting it with a Smoke cloud cannister.
 
 # Vampire
-
-May have written about this one already, I’m not sure.
 
 Unable to restore amina by reloading. Must drain it from others.
 
@@ -379,8 +371,6 @@ RMB – Stored missiles. Hold to build up a barrage of missiles. Release to laun
 SPACE – Mine. Press to lay a mine near your location (like Sniper trap). When something hits it, it explodes, dealing damage in an area. This has lots of knockback, allowing you to hit it yourself to get launched a distance enough to dodge attacks.
 
 # Stone Spirit
-
-Already wrote about this in this document, but I have new ideas for it. Previous idea was supposed to be like Bastion from Overwatch, but now there’s the Snowman, which is good enough.
 
 Stones close enough to you orbit around you, blocking damage and dealing damage. Stone Spirit has more than 1 health and has lower than average move speed.
 
@@ -541,8 +531,6 @@ If you run out of amina you return to normal form. If you get stunned while copi
 While in copied form, you get all abilities from the copied player.
 
 # Spider
-
-I’ve written about this before. Here’s what I’m thinking currently.
 
 LMB – Bite. Deals 1 HP damage in a melee area in front of it. Enemies hit by it also take 1 HP of poison damage per second until they get stunned or heal to max HP.
 
