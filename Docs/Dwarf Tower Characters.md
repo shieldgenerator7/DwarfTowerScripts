@@ -2,11 +2,11 @@
 
 # Sniper
 
-LMB – Levelwide laser that phases in after a short delay. Locks him in place
+LMB – Level-wide laser that phases in after a short delay. Sniper is Immobile for the duration.
 
-RMB – Trap that roots an enemy caught in it for a short while
+RMB – Trap that roots an enemy caught in it for a short while.
 
-SPACE – Bush that he can hide in, spawns at his location
+SPACE – Bush that he can hide in, spawns at his location.
 
 # Mech Generator
 
@@ -54,31 +54,27 @@ SPACE – Shield that drains amina
 
 Basically Merky from Stonicorn. Can be unlocked by using Unicorn to hit a teleport shot with a teleport shot.
 
-PASSIVE – Stone. Cannot move with WASD, only by using the Teleport ability
+PASSIVE – Stone. Immobile. If it would take damage, it teleports to a random location on the map instead.
 
-PASSIVE – Petrified: Cannot move or use abilities while another player is looking at it. Does not Stand (contest the caravan) while Petrified.
+LMB – Flashlight. Hold to shine a light in the opposite target direction. Upgrades to Force Launch: When released, launches Stonicorn in target direction
 
-PASSIVE - Invincible. If it would take damage, it teleports to a random location on the map instead.
+RMB – Camera. Click+drag to move camera.
 
-LMB – Earth quake: Every object in the area takes damage over time
-
-RMB – Ability Orb: Drains amina from enemies and grants it to allies
-
-SPACE - Teleport (Swaps with objects it teleports onto)
+SPACE – Teleport. Press to teleport to target location. Swaps with objects it teleports onto.
 
 # Commander
 
 A commander Dwarf with combat experience. He can rally the troops and tell them where to go, even without player voice comms.
 
-LMB – Bombshell. Click a position, and 0.5 seconds later, it will be hit with a bombshell, damaging everything at that position. Costs amina.
+LMB – Bombshell. Click a position, and 0.5 seconds later, it will be hit with a bombshell, damaging everything at that position. Costs amina per shot.
 
-RMB – Rally Flag. Click a position to spawn a flag there, placing a map marker for all allies. Allies moving toward the flag get a movement speed boost, and allies within the flag’s rally radius also receive a movement speed boost (does not stack). Commander gains amina over time for each ally within the flag’s rally radius. Repositioning the flag does not cost amina. Commander loses amina over time for each enemy within the flag’s rally radius. The flag can be placed on an enemy, which causes the flag to lock on and follow the enemy.
+RMB – Rally Flag. Click a position to spawn a flag there, placing a map marker for all allies. Allies are considered Rallied while moving toward the flag or while within the flag’s rally radius. The flag can be placed on an enemy, which causes the flag to lock on and follow the enemy. Rally Flag does not cost amina.
 
-SPACE – Command Mode. Toggle on and off. While in Command Mode, Commander is rooted and surrounded by a protective bunker that protects him from incoming shots. While in this mode, Commander can also move his camera around the entire map. Command Mode does not cost amina upfront and does not cost amina per second. Whenever the bunker is hit, it consumes amina. If Commander runs out of amina or reloads his amina, he is forced out of Command Mode. Whenever Commander exits Command Mode, the bunker disappears. If Commander is stunned while in Command Mode, he is forced out of it.
+Rallied allies get a movement speed boost and reload amina faster.
 
-SPACE – Command Mode. Press to enter Command Mode. Press again to exit. While in Command Mode, Commander is rooted and enclosed in a bunker that protects him from incoming shots. Command Mode does not cost amina per second, but it does cost a lot of amina up front. Whenever the bunker is hit, it consumes amina to heal itself. It can heal itself each second in chunks. If the bunker breaks, Commander is forced out of Command Mode. If Commander is stunned while in Command Mode, the bunker is auto-destroyed. Commander can run out of amina and reload while in Command Mode without being forced out of it.
+SPACE – Command Mode. Press to enter Command Mode. Press again to exit. During Command Mode, Commander is Immobile and instead uses his movement keys to move the camera.
 
-By using his Rally Flag to guide his teammates, he also gains amina per second, that he can use to stay in Command Mode. If played right, he can sit in a far off corner of the map and effect the battle from afar.
+Command Mode costs 100 amina upfront. When Command Mode is activated, after a long delay, a bunker made up of 4 walls spawns around him. Commander can run out of amina and reload while in Command Mode without being forced out of it. When Commander touches one of his own bunker walls, that wall despawns.
 
 # Furry
 
@@ -556,7 +552,7 @@ SPACE – Burrow. Makes all selected ant burrow if at least one selected ant is 
 
 The giant floating eye of some unseen entity. I think it’s inspired by Vel’Koz from League of Legends.
 
-PASSIVE – Searing Sight. Cannot move. WASD moves the camera. Enemies in the camera and have line of sight to the Eye take damage over time. Get notification when an enemy approaches you.
+PASSIVE – Searing Sight. Immobile. WASD moves the camera. Enemies in the camera and have line of sight to the Eye take damage over time. Get notification when an enemy approaches you.
 
 LMB – Telekinesis. Click+drag to move selected object around. This ability can move the Eye. Works on player made objects and artifacts. Does not work on players or shots.
 
