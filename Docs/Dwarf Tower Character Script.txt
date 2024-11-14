@@ -13,9 +13,31 @@ while
 while the trigger is true, do the following actions
 
 
-cooldown [duration var] [time remaining var]
-if time remaining var is 0, sets it to duration var and continues
-else return
+
+Requirements:
+A requirement is something that needs to be true, else the block will exit early. Aka an "early exit".
+Requirements end with a question mark ("?")
+Consecutive requirements will say true or false, and then if all are true, then they will do the update part of their task, and the block will continue
+cooldown and spend are common requirements that appear next to each other.
+Put a ! in front of the ? to say "not"
+
+
+cooldown [duration var] [next available time var]?
+passes: if the current time is on or after the next available time var
+fails: if the cooldown is not ready yet (as described above in "passes")
+updates: sets next available time var to current time plus duration var
+
+
+spend [mana cost]?
+fails: if mana locked (this happens commonly during reload)
+passes: if there's more than 0 mana (allows partial)
+passes: if disallowPartial and there's [mana cost] mana or more
+updates: reduce mana by mana cost (min 0)
+
+
+
+
+
 
 
 pos [position]
