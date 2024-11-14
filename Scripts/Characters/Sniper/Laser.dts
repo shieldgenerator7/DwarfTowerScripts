@@ -1,3 +1,9 @@
+//_stunDuration: 3
+//_knockBackSpeed: 1
+//_damage: 1
+//_delay: 1.5
+//_despawnDelay: 0.1
+
 //Set timer for when to do damage
 on spawn:
     status ethereal
@@ -19,7 +25,7 @@ on timer _despawnTimer end:
 
 //Stun players
 on hit enemy player _target:
-    stun _target _stunDuration
+    stun _target _stunDuration _knockBackSpeed
 
 //Damage spawned objects and terrain objects
 on hit nonally construct _target:
