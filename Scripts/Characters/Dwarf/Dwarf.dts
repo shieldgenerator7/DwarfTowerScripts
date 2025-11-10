@@ -1,5 +1,26 @@
 Dwarf
 
+constants:
+_ironshot_cddur = 0.5
+_ironshot_cost = 10
+_ironshotRange = 1
+_wallChargeRate = 1
+_wallChargeMin = 10
+_wallChargeMax = 50
+_wallRange = 3
+_turretChargeRate = 1
+_turretChargeMin = 10
+_turretChargeMax = 50
+_turretRange = 3
+
+vars:
+_ironshot_cd_next = 0
+_shootDir = (0,1)
+_wallCharge = 0
+_wall = {}
+_turretCharge = 0
+_turret = {}
+
 //Iron shot
 while button action1:
    //fire rate
@@ -7,7 +28,7 @@ while button action1:
    //mana
    spend _ironshot_cost?
    //shoot projectile
-   _ironshot = spawn "ironshot" dir mousedir _ironshotRange, shoot dir mousedir
+   spawn "ironshot" dir mousedir _ironshotRange, shoot dir mousedir
    //insert _ironshot @shot
    _shootDir = mousedir
 
