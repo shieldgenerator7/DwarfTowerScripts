@@ -316,7 +316,7 @@ Each ability button is a note he can play that affects him and his allies. The l
 
 LMB – Damage boost. Allies increase fire rate, and ally shots do more damage.
 
-RMB – Healing. Heals allies by 1 hp per note and does the same for everything in the area, including ally constructs and shots, and neutral obstacles (but not enemy players or objects).
+RMB – Healing. Heals allies by 1 hp per note and does the same for everything in the area, including ally constructs and shots, and neutral obstacles (but not enemy players or objects). This effectively increases the range of many ally shots.
 
 SPACE – Movement speed boost. Allies and ally shots move faster.
 
@@ -328,11 +328,13 @@ There may also be specific multi-note songs that have a particular effect.
 
 Gets in, grabs loot, gets out.
 
+PASSIVE – Stealth. While standing still next to a wall, he is Stealthed.
+
 LMB – Grabby hands. Reaches out in the cursor direction, and claims whatever ally or enemy object it comes into contact with. The object is held above his head until he lets go of it. Control is passed to him. The object is still active while he’s holding it, in that it can damage and can take damage. Can only carry one thing at a time. Cannot launch other abilities while holding an object, but can activate smoke cannister and grappling hook while holding something.
 
-RMB – Smoke cloud. Throws smoke cannister shot in the cursor direction. at cursor location. If it reaches its destination, it While active, press RMB again to unleash a cloud that makes him invisible and drains the amina of enemies inside. Because of this, can only have one cannister out at a time, but can have many smoke clouds on the field at a time.
+RMB – Smoke cloud. Throws smoke cannister shot in the cursor direction at the cursor’s location. While active, press RMB again to unleash a cloud that makes him Stealthed and drains the amina of enemies inside. Because of this, can only have one cannister out at a time, but can have many smoke clouds on the field at a time. Each smoke cloud lasts for a set duration.
 
-SPACE – Grappling hook. Press to send it in the cursor direction. When it hits something, it stops. While it’s out, hold to pull Thief out to the hook’s location. Does not drag him through solid objects. Stop holding to stop pulling Thief. Hook lasts until destroyed. Thief can destroy his grappling hook by hitting it with a Smoke cloud cannister.
+SPACE – Grappling hook. Press to send it in the cursor direction. When it hits something, it stops. While it’s out, hold to pull Thief out to the hook’s location. Does not drag him through solid objects. Stop holding to stop pulling Thief. Hook lasts until destroyed. Thief can destroy his grappling hook by hitting it with a Smoke cloud cannister. Opponents can also destroy the grappling hook projectile.
 
 # Vampire
 
