@@ -50,6 +50,18 @@ RMB – Medium-range Heavy duty laser (instant cast, locks him in direction and 
 
 SPACE – Shield that drains amina
 
+# Unicorn
+
+A unicorn that makes rainbows and magic.
+
+Passive – Running Magic. Unicorn’s projectiles launch with the same speed he has.
+
+LMB – Charge Shot. Hold to increase its size and power, release to let go off it. While held, it changes direction with unicorn’s move direction.
+
+RMB – Teleport Shot. Shoots a star projectile that teleports the first object hit to your cursor’s position.
+
+SPACE – Rainbow Road. Leaves behind a rainbow trail that speeds up allies.
+
 # Stonicorn
 
 Basically Merky from Stonicorn. Can be unlocked by using Unicorn to hit a teleport shot with a teleport shot.
